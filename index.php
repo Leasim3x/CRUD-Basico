@@ -57,8 +57,8 @@ $query = mysqli_query($con, $sql);
                     <th> <?php echo $row['nombre'] ?> </th>
                     <th> <?php echo $row['apellido'] ?> </th>
                     <th> <?php echo $row['usuario'] ?> </th>
-                    <th> <?php echo $row['correo_e'] ?> </th>
                     <th> <?php echo $row['contrasena'] ?> </th>
+                    <th> <?php echo $row['correo_e'] ?> </th>
 
                     <th><a href="update_user.php?id=<?= $row['id'] ?>" class="users-table--edit">Editar</a></th>
                     <th><a href="delete_user.php?id=<?= $row['id'] ?>" class="users-table--delete">Eliminar</a></th>
