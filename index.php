@@ -60,8 +60,8 @@ $query = mysqli_query($con, $sql);
                     <th> <?php echo $row['correo_e'] ?> </th>
                     <th> <?php echo $row['contrasena'] ?> </th>
 
-                    <th><a href="update_user.php?id=<?php $row['id'] ?>" class="users-table--edit">Editar</a></th>
-                    <th><a href="delete_user.php?id=<?php $row['id'] ?>" class="users-table--delete">Eliminar</a></th>
+                    <th><a href="update_user.php?id=<?= $row['id'] ?>" class="users-table--edit">Editar</a></th>
+                    <th><a href="delete_user.php?id=<?= $row['id'] ?>" class="users-table--delete">Eliminar</a></th>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
