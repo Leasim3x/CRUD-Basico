@@ -1,0 +1,18 @@
+<?php
+// Conexión a la BD
+function connection(){
+    // Credenciales
+    $host = "";
+    $user = "";
+    $pass = "";
+    // Nombre de la BD
+    $bd = "";
+
+    $connect = mysqli_connect($host, $user, $pass);
+
+    mysqli_select_db($connect, $bd);
+
+    // Regresa los datos que encontro en la conexión
+    return $connect;
+}
+?>
